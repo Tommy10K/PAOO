@@ -12,3 +12,9 @@ add_executable(
     src/main.cpp 
     src/SoundBuffer.cpp
 )
+
+add_custom_target(run
+    COMMAND $<TARGET_FILE:program>
+    
+    DEPENDS program
+)

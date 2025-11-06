@@ -72,6 +72,7 @@ preinstall:
 
 # The main recursive "clean" target.
 clean: CMakeFiles/program.dir/clean
+clean: CMakeFiles/run.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -99,6 +100,32 @@ program: CMakeFiles/program.dir/rule
 CMakeFiles/program.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/clean
 .PHONY : CMakeFiles/program.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/run.dir
+
+# All Build rule for target.
+CMakeFiles/run.dir/all: CMakeFiles/program.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/alex/AN4/PAOO/tema1/build/CMakeFiles --progress-num= "Built target run"
+.PHONY : CMakeFiles/run.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/run.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alex/AN4/PAOO/tema1/build/CMakeFiles 3
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/run.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alex/AN4/PAOO/tema1/build/CMakeFiles 0
+.PHONY : CMakeFiles/run.dir/rule
+
+# Convenience name for target.
+run: CMakeFiles/run.dir/rule
+.PHONY : run
+
+# clean rule for target.
+CMakeFiles/run.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/clean
+.PHONY : CMakeFiles/run.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

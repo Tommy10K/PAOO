@@ -129,6 +129,19 @@ program/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/build
 .PHONY : program/fast
 
+#=============================================================================
+# Target rules for targets named run
+
+# Build rule for target.
+run: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 run
+.PHONY : run
+
+# fast build rule for target.
+run/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/build
+.PHONY : run/fast
+
 src/SoundBuffer.o: src/SoundBuffer.cpp.o
 .PHONY : src/SoundBuffer.o
 
@@ -185,6 +198,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... run"
 	@echo "... program"
 	@echo "... src/SoundBuffer.o"
 	@echo "... src/SoundBuffer.i"
