@@ -1,0 +1,4 @@
+/home/alex/AN4/PAOO/tema3/build/CMakeFiles/program.dir
+/home/alex/AN4/PAOO/tema3/build/CMakeFiles/run.dir
+/home/alex/AN4/PAOO/tema3/build/CMakeFiles/edit_cache.dir
+/home/alex/AN4/PAOO/tema3/build/CMakeFiles/rebuild_cache.dir
