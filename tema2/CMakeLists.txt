@@ -5,7 +5,7 @@ project(Tema2 CXX)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
-add_executable(program main.cpp)
+add_executable(program src/main.cpp)
 
 add_custom_target(run
     COMMAND $<TARGET_FILE:program>
